@@ -22,7 +22,8 @@
   "homepage": "https://github.com/mortonprod/react-fade-background-component#readme",
   "dependencies": {
     "lodash": "^4.17.4",
-    "react": "^15.6.1"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
