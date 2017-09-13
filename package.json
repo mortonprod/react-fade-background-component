@@ -1,0 +1,45 @@
+{
+  "name": "@mortonprod/react-fade-background-component",
+  "version": "1.0.0",
+  "description": "This component will place background behind children. The fade in should complete before the bottom of background image is at the botton of viewport.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run tests",
+    "build": "./node_modules/.bin/webpack --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mortonprod/react-fade-background-component.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Alexander Morton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mortonprod/react-fade-background-component/issues"
+  },
+  "homepage": "https://github.com/mortonprod/react-fade-background-component#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "react": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "ignore-loader": "^0.1.2",
+    "optimize-css-assets-webpack-plugin": "^3.1.1",
+    "style-loader": "^0.18.2",
+    "svg-inline-loader": "^0.8.0",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.4.1"
+  }
+}
