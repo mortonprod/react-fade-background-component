@@ -16,7 +16,10 @@ module.exports =  {
       exclude: /(node_modules)/,
       loader: 'babel-loader'
     },
-		{ test: /\.css$/, loader:ExtractTextPlugin.extract("css-loader!minimize") }
+		{ test: /\.css$/, loader:ExtractTextPlugin.extract("css-loader?minimize") },
+		{
+		   test: /\.(jpe?g|png|ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,use: 'base64-inline-loader?limit=100000000&name=[name].[ext]'
+		}
   ]
   },
   externals: {

@@ -17,7 +17,6 @@ import "./fadeBackground.css";
 
 */
 class FadeBackground extends Component {
-  background = null;
   /**
     Must sure to call resize to stop blue flash of opacity = null.
   */
@@ -27,6 +26,7 @@ class FadeBackground extends Component {
     this.resize = _.debounce(this.resize.bind(this),300,{trailing:true,leading:false});
     this.scroll = _.throttle(this.scroll,100,{leading:false,trailing:true});
     this.resize.bind(this)();
+		this.background = null;
   }
   /**
     When resize called make sure update opacity value through height.
